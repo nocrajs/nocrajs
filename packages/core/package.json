@@ -1,0 +1,46 @@
+{
+  "name": "@nocra/core",
+  "version": "0.0.0",
+  "description": "Core utilities and types for Nocra projects.",
+  "main": "./build/index.cjs",
+  "module": "./build/index.mjs",
+  "type": "module",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./build/index.cjs",
+      "import": "./build/index.mjs"
+    }
+  },
+  "files": [
+    "build",
+    "README.md",
+    "package.json",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup source/index.ts --format esm,cjs --dts --clean --out-dir build",
+    "lint": "eslint \"source/**/*.{ts,js}\" --fix"
+  },
+  "keywords": [
+    "nocra",
+    "core",
+    "utility",
+    "typescript",
+    "shared"
+  ],
+  "author": "Sébastien GARCIA <sebastien.works@outlook.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nocrajs/nocrajs",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/nocrajs/nocrajs/issues"
+  }
+}
