@@ -17,7 +17,6 @@ coverage/
 *.lcov.info
 test-results/
 
-.vscode/
 .idea/
 *.log
 *.tmp
