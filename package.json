@@ -1,1 +1,108 @@
-{}
+{
+  "name": "@nocra/root",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Nocra provides a modern, type-safe framework for creating command-line applications with an elegant developer experience.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nocrajs/nocrajs"
+  },
+  "author": {
+    "name": "Sébastien Garcia",
+    "email": "sebastien.garcia@mail.com",
+    "url": "https://github.com/striatp"
+  },
+  "keywords": [
+    "typescript",
+    "cli",
+    "framework",
+    "monorepo",
+    "tools",
+    "modular",
+    "developer-tools"
+  ],
+  "homepage": "https://github.com/nocrajs/nocrajs#readme",
+  "bugs": {
+    "url": "https://github.com/nocrajs/nocrajs/issues"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "scripts": {
+    "build:all": "node .\\scripts\\build-scripts\\javascript\\build-all.js",
+    "build:colors": "node .\\scripts\\build-scripts\\javascript\\build-colors.js",
+    "build:config": "node .\\scripts\\build-scripts\\javascript\\build-config.js",
+    "build:core": "node .\\scripts\\build-scripts\\javascript\\build-core.js",
+    "build:errors": "node .\\scripts\\build-scripts\\javascript\\build-errors.js",
+    "build:hooks": "node .\\scripts\\build-scripts\\javascript\\build-hooks.js",
+    "build:logger": "node .\\scripts\\build-scripts\\javascript\\build-logger.js",
+    "build:middleware": "node .\\scripts\\build-scripts\\javascript\\build-middleware.js",
+    "build:parser": "node .\\scripts\\build-scripts\\javascript\\build-parser.js",
+    "build:prompts": "node .\\scripts\\build-scripts\\javascript\\build-prompts.js",
+    "build:theme": "node .\\scripts\\build-scripts\\javascript\\build-theme.js",
+    "build:types": "node .\\scripts\\build-scripts\\javascript\\build-types.js",
+    "build:utils": "node .\\scripts\\build-scripts\\javascript\\build-utils.js",
+    "ps-build:all": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-all.ps1",
+    "ps-build:colors": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-colors.ps1",
+    "ps-build:config": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-config.ps1",
+    "ps-build:core": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-core.ps1",
+    "ps-build:errors": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-errors.ps1",
+    "ps-build:hooks": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-hooks.ps1",
+    "ps-build:logger": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-logger.ps1",
+    "ps-build:middleware": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-middleware.ps1",
+    "ps-build:parser": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-parser.ps1",
+    "ps-build:prompts": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-prompts.ps1",
+    "ps-build:theme": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-theme.ps1",
+    "ps-build:types": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-types.ps1",
+    "ps-build:utils": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-scripts\\powershell\\build-utils.ps1",
+    "lint:all": "node .\\scripts\\lint-scripts\\javascript\\lint-all.js",
+    "lint:colors": "node .\\scripts\\lint-scripts\\javascript\\lint-colors.js",
+    "lint:config": "node .\\scripts\\lint-scripts\\javascript\\lint-config.js",
+    "lint:core": "node .\\scripts\\lint-scripts\\javascript\\lint-core.js",
+    "lint:errors": "node .\\scripts\\lint-scripts\\javascript\\lint-errors.js",
+    "lint:hooks": "node .\\scripts\\lint-scripts\\javascript\\lint-hooks.js",
+    "lint:logger": "node .\\scripts\\lint-scripts\\javascript\\lint-logger.js",
+    "lint:middleware": "node .\\scripts\\lint-scripts\\javascript\\lint-middleware.js",
+    "lint:parser": "node .\\scripts\\lint-scripts\\javascript\\lint-parser.js",
+    "lint:prompts": "node .\\scripts\\lint-scripts\\javascript\\lint-prompts.js",
+    "lint:theme": "node .\\scripts\\lint-scripts\\javascript\\lint-theme.js",
+    "lint:types": "node .\\scripts\\lint-scripts\\javascript\\lint-types.js",
+    "lint:utils": "node .\\scripts\\lint-scripts\\javascript\\lint-utils.js",
+    "ps-lint:all": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-all.ps1",
+    "ps-lint:colors": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-colors.ps1",
+    "ps-lint:config": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-config.ps1",
+    "ps-lint:core": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-core.ps1",
+    "ps-lint:errors": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-errors.ps1",
+    "ps-lint:hooks": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-hooks.ps1",
+    "ps-lint:logger": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-logger.ps1",
+    "ps-lint:middleware": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-middleware.ps1",
+    "ps-lint:parser": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-parser.ps1",
+    "ps-lint:prompts": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-prompts.ps1",
+    "ps-lint:theme": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-theme.ps1",
+    "ps-lint:types": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-types.ps1",
+    "ps-lint:utils": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-utils.ps1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "9.28.0",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "10.1.5",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-prettier": "5.4.1",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/node": "^24.0.1",
+    "husky": "9.1.7"
+  }
+}
