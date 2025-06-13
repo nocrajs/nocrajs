@@ -1,0 +1,1 @@
+. "$PSScriptRoot/lint.ps1" ; Test-Package -PackageName "prompts" ;
