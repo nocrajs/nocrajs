@@ -1,0 +1,1 @@
+. "$PSScriptRoot/build.ps1" ; Build-Package -PackageName "theme" ;
