@@ -3,13 +3,13 @@ import process from "node:process";
 
 function TestPackage(PackageName) {
   const command = `pnpm --filter @nocra/${PackageName} run lint`;
-  console.log(`\nBuilding @nocra/${PackageName}: ${command}`);
+  console.log(`\nLinting @nocra/${PackageName}: ${command}`);
 
   try {
     execSync(command, { stdio: "inherit" });
     console.log(`\nLint completed successfully for @nocra/${PackageName}.`);
   } catch (error) {
-    console.log(`\nLint failed for @nocra/${PackageName} : ${Command}`);
+    console.log(`\nLint failed for @nocra/${PackageName} : ${command}`);
     process.exit(1);
   }
 }
