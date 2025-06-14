@@ -42,5 +42,8 @@
   },
   "bugs": {
     "url": "https://github.com/nocrajs/nocrajs/issues"
+  },
+  "dependencies": {
+    "@nocra/types": "workspace:*"
   }
 }
