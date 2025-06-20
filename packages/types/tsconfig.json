@@ -1,44 +1,10 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "declaration": true,
     "outDir": "./build",
     "rootDir": "./source"
   },
   "include": ["source/**/*"],
-  "exclude": ["build", "node_modules"],
-  "references": [
-    {
-      "path": "../types"
-    },
-    {
-      "path": "../utils"
-    },
-    {
-      "path": "../errors"
-    },
-    {
-      "path": "../logger"
-    },
-    {
-      "path": "../hooks"
-    },
-    {
-      "path": "../prompts"
-    },
-    {
-      "path": "../parser"
-    },
-    {
-      "path": "../colors"
-    },
-    {
-      "path": "../theme"
-    },
-    {
-      "path": "../middleware"
-    },
-    {
-      "path": "../config"
-    }
-  ]
+  "exclude": ["build", "node_modules"]
 }

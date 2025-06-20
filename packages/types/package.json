@@ -1,7 +1,7 @@
 {
-  "name": "@nocra/core",
+  "name": "@nocra/types",
   "version": "0.0.0",
-  "description": "Core utilities and types for Nocra projects.",
+  "description": "Types for Nocra projects.",
   "main": "./build/index.cjs",
   "module": "./build/index.mjs",
   "type": "module",
