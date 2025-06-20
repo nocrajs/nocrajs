@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "description": "Nocra provides a modern, type-safe framework for creating command-line applications with an elegant developer experience.",
   "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
   "type": "module",
   "repository": {
     "type": "git",
@@ -80,7 +83,10 @@
     "ps-lint:prompts": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-prompts.ps1",
     "ps-lint:theme": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-theme.ps1",
     "ps-lint:types": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-types.ps1",
-    "ps-lint:utils": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-utils.ps1"
+    "ps-lint:utils": "powershell -ExecutionPolicy Bypass -File .\\scripts\\lint-scripts\\powershell\\lint-utils.ps1",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
   },
   "lint-staged": {
     "*.{ts,tsx,js,json,md}": [
@@ -89,6 +95,7 @@
     ]
   },
   "devDependencies": {
+    "@changesets/cli": "2.29.5",
     "@eslint/js": "9.28.0",
     "@typescript-eslint/eslint-plugin": "^8.34.0",
     "@typescript-eslint/parser": "^8.34.0",
@@ -99,6 +106,7 @@
     "lint-staged": "^16.1.0",
     "prettier": "^3.5.3",
     "tsup": "^8.5.0",
+    "turbo": "2.5.4",
     "typescript": "^5.8.3"
   },
   "dependencies": {
