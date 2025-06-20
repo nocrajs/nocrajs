@@ -1,15 +1,9 @@
-import process from "node:process";
-
-process.stdout.write("\nHello world!");
-
-export interface LogFunction {
-  <T extends string[]>(...args: T): void;
-}
-
-export const log: LogFunction = (...T) => {
-  process.stdout.write(T.join(" "));
+export type NocraCore = {
+  version: string;
 };
 
-const test = "ts";
+const nocraCore: NocraCore = {
+  version: "0.0.0",
+};
 
-let test2;
+console.log("Hello World", nocraCore);

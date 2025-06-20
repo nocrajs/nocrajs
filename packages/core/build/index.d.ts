@@ -1,6 +1,5 @@
-interface LogFunction {
-  <T extends string[]>(...args: T): void;
-}
-declare const log: LogFunction;
+type NocraCore = {
+  version: string;
+};
 
-export { type LogFunction, log };
+export type { NocraCore };
