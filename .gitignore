@@ -28,6 +28,7 @@ storage/
 package-lock.json
 yarn.lock
 
+.turbo/
 .DS_Store
 Thumbs.db
 *.bak

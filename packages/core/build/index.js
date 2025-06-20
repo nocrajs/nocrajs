@@ -1,7 +1,5 @@
 // source/index.ts
-import process from "process";
-process.stdout.write("\nHello world!");
-var log = (...T) => {
-  process.stdout.write(T.join(" "));
+var nocraCore = {
+  version: "0.0.0",
 };
-export { log };
+console.log("Hello World", nocraCore);

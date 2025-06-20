@@ -1,6 +1,6 @@
 {
   "name": "@nocra/core",
-  "version": "0.0.0",
+  "version": "0.0.0-20250620112638",
   "description": "Core utilities and types for Nocra projects.",
   "main": "./build/index.cjs",
   "module": "./build/index.mjs",

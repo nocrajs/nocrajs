@@ -9,7 +9,7 @@ function BuildPackage(PackageName) {
     execSync(command, { stdio: "inherit" });
     console.log(`\nBuild completed successfully for @nocra/${PackageName}.`);
   } catch (error) {
-    console.log(`\nBuild failed for @nocra/${PackageName} : ${Command}`);
+    console.log(`\nBuild failed for @nocra/${PackageName} : ${command}`);
     process.exit(1);
   }
 }
